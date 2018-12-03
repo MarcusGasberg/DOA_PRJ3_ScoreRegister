@@ -6,5 +6,6 @@ int main()
 	sb.addToSearchHistory("Hello");
 	sb.addToSearchHistory("Hey");
 	sb.addToSearchHistory("Heydan");
-	cin >> sb;
+	sb.autocomplete("He");
+	sb.printAutoComplete();
 }

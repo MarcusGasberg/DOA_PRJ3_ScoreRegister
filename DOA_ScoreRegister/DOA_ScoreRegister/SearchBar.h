@@ -14,14 +14,9 @@ public:
 	{
 	}
 
-	void autocomplete(std::string prefix)
+	void autocomplete(std::string s)
 	{
-		container_.findAllWithPrefix(prefix,strings_);
-	}
-
-	void autocomplete()
-	{
-		container_.findAllWithPrefix(wordSearched_, strings_);
+		container_.findAllWithPrefix(s, strings_);
 	}
 
 	void printAutoComplete() const
@@ -42,13 +37,7 @@ public:
 		container_.remove(toDel);
 	}
 
-	friend istream& operator>>(istream &input, SearchBar sb)
-	{
-		input >> sb.wordSearched_;
-		return input;
-	}
 private:
 	Trie container_;
 	vector<std::string> strings_;
-	std::string wordSearched_;
 };

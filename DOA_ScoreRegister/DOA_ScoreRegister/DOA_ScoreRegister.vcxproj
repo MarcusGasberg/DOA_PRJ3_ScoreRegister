@@ -139,10 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="GameScore.h" />
     <ClInclude Include="Hash.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="OAHashMap.h" />
+    <ClInclude Include="ScoreRegister.h" />
+    <ClInclude Include="SearchableScoreRegister.h" />
     <ClInclude Include="SearchBar.h" />
     <ClInclude Include="Trie.h" />
   </ItemGroup>
