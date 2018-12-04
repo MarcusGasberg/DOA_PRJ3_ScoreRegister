@@ -27,6 +27,11 @@ public:
 		}
 	}
 
+	vector<std::string>& getStrings()
+	{
+		return strings_;
+	}
+
 	void addToSearchHistory(std::string toAdd)
 	{
 		container_.insert(toAdd);

@@ -1,4 +1,4 @@
 ﻿  Source.cpp
-c:\users\marcus gasberg\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(50): warning C4018: '<': signed/unsigned mismatch
-c:\users\marcus gasberg\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(97): warning C4018: '<': signed/unsigned mismatch
-  DOA_ScoreRegister.vcxproj -> C:\Users\Marcus Gasberg\Documents\GitHub\DOA_PRJ3_ScoreRegister\DOA_ScoreRegister\Debug\DOA_ScoreRegister.exe
+c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(50): warning C4018: '<': signed/unsigned mismatch
+c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(97): warning C4018: '<': signed/unsigned mismatch
+  DOA_ScoreRegister.vcxproj -> C:\Users\mrgas\Documents\GitHub\DOA_PRJ3_ScoreRegister\DOA_ScoreRegister\Debug\DOA_ScoreRegister.exe

@@ -21,15 +21,31 @@ public:
 
 	void insertRegister(GameScore gs)
 	{
-		hashMap_.insert(gs.getTeam1(),gs);
-		hashMap_.insert(gs.getTeam2(), gs);
+		LinkedList::Node<GameScore>* n;
+		if(hashMap_.search(gs.getTeam1(),n))
+		{
+			LinkedList::headInsert(n,gs);
+		}
+		else
+		{
+			hashMap_.insert(gs.getTeam1(), new LinkedList::Node<GameScore>(gs));
+		}
+
+		if (hashMap_.search(gs.getTeam2(), n))
+		{
+			LinkedList::headInsert(n, gs);
+		}
+		else
+		{
+			hashMap_.insert(gs.getTeam2(), new LinkedList::Node<GameScore>(gs));
+		}
 	}
 
-	void printScores() const
+	void scoreSearch(std::string s,LinkedList::Node<GameScore>*& n)
 	{
-
+		hashMap_.search(s, n);
 	}
 
 private:
-	OAHashMap<std::string, LinkedList::Node<GameScore>> hashMap_;
+	OAHashMap<std::string, LinkedList::Node<GameScore>*> hashMap_;
 };

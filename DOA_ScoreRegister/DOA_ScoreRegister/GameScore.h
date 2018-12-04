@@ -5,6 +5,10 @@
 class GameScore
 {
 public:
+	GameScore()
+		:team1_("Team 1"), team2_("Team 2"), scoreTeam1_(0), scoreTeam2_(0)
+	{	}
+
 	GameScore(std::string t1, std::string t2, int sc1, int sc2)
 		:team1_(t1),team2_(t2),scoreTeam1_(sc1),scoreTeam2_(sc2)
 	{	}
