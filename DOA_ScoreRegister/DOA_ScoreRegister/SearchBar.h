@@ -27,7 +27,7 @@ public:
 		}
 	}
 
-	vector<std::string>& getStrings()
+	std::vector<std::string>& getStrings()
 	{
 		return strings_;
 	}
@@ -44,5 +44,5 @@ public:
 
 private:
 	Trie container_;
-	vector<std::string> strings_;
+	std::vector<std::string> strings_;
 };

@@ -2,14 +2,13 @@
 #include <map>
 #include <vector>
 
-using namespace std;
 
 class Trie
 {
 	class TrieNode;
 
-	typedef map<char, TrieNode*> TrieMap;
-	typedef map<char, TrieNode*>::iterator TrieMapIter;
+	typedef std::map<char, TrieNode*> TrieMap;
+	typedef std::map<char, TrieNode*>::iterator TrieMapIter;
 
 	// Internal TrieNode class - not relevant outside Trie
 	class TrieNode
@@ -42,7 +41,7 @@ public:
 	}
 
 
-	void insert(string str) const
+	void insert(std::string str) const
 	{
 		TrieNode* cur = root;
 		TrieMapIter res;
@@ -64,7 +63,7 @@ public:
 	}
 
 
-	bool search(string str) const
+	bool search(std::string str) const
 	{
 		if (str.empty())
 		{
@@ -89,7 +88,7 @@ public:
 	}
 
 
-	void remove(string str) const
+	void remove(std::string str) const
 	{
 		TrieNode* cur = root;
 		TrieMapIter res;
@@ -113,7 +112,7 @@ public:
 		}
 	}
 
-	void findAllWithPrefix(string prefix, vector<string>& strings) const
+	void findAllWithPrefix(std::string prefix, std::vector<std::string>& strings) const
 	{
 		strings.clear();
 		if (prefix.empty()) {
@@ -130,7 +129,7 @@ private:
 
 	// findPrefixEnd: 
 	// Sets the parameter end to the last node in the prefix of str and returns the length of the prefix
-	unsigned int findPrefixEnd(string str, TrieNode*& end) const
+	unsigned int findPrefixEnd(std::string str, TrieNode*& end) const
 	{
 		TrieNode* cur = root;
 		TrieMapIter res;
@@ -150,7 +149,7 @@ private:
 		return i;
 	}
 
-	void recursiveFindWords(string prefix,TrieNode* prefixEndNode, vector<string>& strings) const
+	void recursiveFindWords(std::string prefix,TrieNode* prefixEndNode, std::vector<std::string>& strings) const
 	{
 		if (prefixEndNode->completesWord)
 			strings.push_back(prefix);

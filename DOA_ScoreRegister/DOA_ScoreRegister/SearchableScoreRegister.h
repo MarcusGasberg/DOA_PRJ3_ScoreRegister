@@ -9,7 +9,7 @@ class SearchableScoreRegister
 {
 public:
 	SearchableScoreRegister()
-		:sr_(100)
+		:sr_(ARRAY_SIZE)
 	{
 	}
 
@@ -17,11 +17,15 @@ public:
 	{
 	}
 
-	SearchBar sb_;
+	void searchScoreRegister(std::string teamname)
+	{
+		sb_.autocomplete(teamname);
+		scoreLookup();
+	}
 
 	void scoreLookup()
 	{
-		vector<std::string>& strings = sb_.getStrings();
+		std::vector<std::string>& strings = sb_.getStrings();
 		for (std::string s : strings)
 		{
 			LinkedList::Node<GameScore>* n = nullptr;
@@ -37,8 +41,11 @@ public:
 	void insertGame(GameScore gs)
 	{
 		sr_.insertRegister(gs);
+		sb_.addToSearchHistory(gs.getTeam1());
+		sb_.addToSearchHistory(gs.getTeam2());
 	}
 
 private:
 	ScoreRegister sr_;
+	SearchBar sb_;
 };

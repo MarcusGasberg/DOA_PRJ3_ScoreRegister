@@ -22,9 +22,10 @@ public:
 	void insertRegister(GameScore gs)
 	{
 		LinkedList::Node<GameScore>* n;
-		if(hashMap_.search(gs.getTeam1(),n))
-		{
-			LinkedList::headInsert(n,gs);
+		if(hashMap_.search(gs.getTeam1(),n)){
+			while (n != nullptr && n->next != nullptr) 
+				n = n->next;
+			LinkedList::insert(n, gs);
 		}
 		else
 		{
@@ -33,7 +34,9 @@ public:
 
 		if (hashMap_.search(gs.getTeam2(), n))
 		{
-			LinkedList::headInsert(n, gs);
+			while (n != nullptr && n->next != nullptr)
+				n = n->next;
+			LinkedList::insert(n, gs);
 		}
 		else
 		{
