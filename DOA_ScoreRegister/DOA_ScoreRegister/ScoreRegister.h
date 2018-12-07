@@ -21,8 +21,9 @@ public:
 
 	void insertRegister(GameScore gs)
 	{
-		LinkedList::Node<GameScore>* n;
+		LinkedList::Node<GameScore>* n; // Needs to be updated so n is pointing to the address of the headptr in the hashmap if headinsert should be used.
 		if(hashMap_.search(gs.getTeam1(),n)){
+			//LinkedList::headInsert(n, gs); 
 			while (n != nullptr && n->next != nullptr) 
 				n = n->next;
 			LinkedList::insert(n, gs);
@@ -34,6 +35,7 @@ public:
 
 		if (hashMap_.search(gs.getTeam2(), n))
 		{
+			//LinkedList::headInsert(n, gs);
 			while (n != nullptr && n->next != nullptr)
 				n = n->next;
 			LinkedList::insert(n, gs);

@@ -33,7 +33,7 @@ public:
 	}
 
 	void addToSearchHistory(std::string toAdd)
-	{
+	{	
 		container_.insert(toAdd);
 	}
 

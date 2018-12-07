@@ -1,4 +1,7 @@
 ﻿  Source.cpp
-c:\users\marcus gasberg\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(49): warning C4018: '<': signed/unsigned mismatch
-c:\users\marcus gasberg\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(96): warning C4018: '<': signed/unsigned mismatch
-  DOA_ScoreRegister.vcxproj -> C:\Users\Marcus Gasberg\Documents\GitHub\DOA_PRJ3_ScoreRegister\DOA_ScoreRegister\Debug\DOA_ScoreRegister.exe
+c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(49): warning C4018: '<': signed/unsigned mismatch
+c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\trie.h(96): warning C4018: '<': signed/unsigned mismatch
+c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\gamescore.h(26): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(476): note: see declaration of 'ctime'
+c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\scoreregister.h(25): warning C4700: uninitialized local variable 'n' used
+  DOA_ScoreRegister.vcxproj -> C:\Users\mrgas\Documents\GitHub\DOA_PRJ3_ScoreRegister\DOA_ScoreRegister\Debug\DOA_ScoreRegister.exe
