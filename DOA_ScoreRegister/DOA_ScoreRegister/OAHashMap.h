@@ -19,13 +19,13 @@ public:
 	// POST:	If entry with Key = key is found in the map, value is set to the corresponding value and
 	//			true is returned. Otherwise, false is returned.
 	// ==========================================================================================
-	bool search(const KeyType& key, ValueType& value)
+	bool search(const KeyType& key, ValueType*& value)
 	{
 		int index = findIndex(key);
 
 		if (index == KEY_NOT_FOUND) return false;
 		
-		value = map[index].value;
+		value = &map[index].value;
 		return true;
 	}
 

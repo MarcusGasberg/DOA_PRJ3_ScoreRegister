@@ -40,7 +40,8 @@ public:
 
 	}
 
-
+	
+	//Inserts a string into the trie
 	void insert(std::string str) const
 	{
 		TrieNode* cur = root;
@@ -62,7 +63,7 @@ public:
 		cur->completesWord = true;
 	}
 
-
+	//Searches the trie for the string str
 	bool search(std::string str) const
 	{
 		if (str.empty())
@@ -87,7 +88,7 @@ public:
 		return cur->completesWord;
 	}
 
-
+	//Removes a string str from the trie if it exists
 	void remove(std::string str) const
 	{
 		TrieNode* cur = root;
@@ -112,6 +113,7 @@ public:
 		}
 	}
 
+	//Find all strings that completes the string prefix and stores it in the vector strings
 	void findAllWithPrefix(std::string prefix, std::vector<std::string>& strings) const
 	{
 		strings.clear();
@@ -149,6 +151,7 @@ private:
 		return i;
 	}
 
+	//Helper function for the findAllWithPrefix, that recursively find words with the string prefix.
 	void recursiveFindWords(std::string prefix,TrieNode* prefixEndNode, std::vector<std::string>& strings) const
 	{
 		if (prefixEndNode->completesWord)

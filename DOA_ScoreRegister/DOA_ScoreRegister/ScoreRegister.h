@@ -19,14 +19,12 @@ public:
 	{
 	}
 
-	void insertRegister(GameScore gs)
+	//Inserts a GameScore gs into the score register.
+	void insertRegister(const GameScore& gs)
 	{
-		LinkedList::Node<GameScore>* n; // Needs to be updated so n is pointing to the address of the headptr in the hashmap if headinsert should be used.
+		LinkedList::Node<GameScore>** n;
 		if(hashMap_.search(gs.getTeam1(),n)){
-			//LinkedList::headInsert(n, gs); 
-			while (n != nullptr && n->next != nullptr) 
-				n = n->next;
-			LinkedList::insert(n, gs);
+			LinkedList::headInsert(*n, gs);
 		}
 		else
 		{
@@ -35,10 +33,7 @@ public:
 
 		if (hashMap_.search(gs.getTeam2(), n))
 		{
-			//LinkedList::headInsert(n, gs);
-			while (n != nullptr && n->next != nullptr)
-				n = n->next;
-			LinkedList::insert(n, gs);
+			LinkedList::headInsert(*n, gs);
 		}
 		else
 		{
@@ -46,7 +41,8 @@ public:
 		}
 	}
 
-	void scoreSearch(std::string s,LinkedList::Node<GameScore>*& n)
+	//Searches the score register for the headptr to the GameScore linked list
+	void scoreSearch(const std::string& s,LinkedList::Node<GameScore>**& n)
 	{
 		hashMap_.search(s, n);
 	}
