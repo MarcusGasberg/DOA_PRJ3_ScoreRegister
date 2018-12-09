@@ -44,8 +44,15 @@ TEST_F(SearchBarTest, Autocomplete_autocomplete_emptyString_empty) {
 	ASSERT_EQ(testVec.front(),"");
 }
 
-TEST_F(SearchBarTest, Autocomplete_autocomplete_wrongString_empty) { //Oh shit trie doesn't return if the word is wrong.
+TEST_F(SearchBarTest, Autocomplete_autocomplete_wrongString_empty) {
 	sb_.autocomplete("test5");
 	std::vector<std::string> testVec = sb_.getStrings();
 	ASSERT_TRUE(testVec.empty());
+}
+
+
+TEST_F(SearchBarTest, Autocomplete_autocomplete_t_sizecorrect) {
+	sb_.autocomplete("t");
+	std::vector<std::string> testVec = sb_.getStrings();
+	ASSERT_EQ(testVec.size(), compareVec.size());
 }
