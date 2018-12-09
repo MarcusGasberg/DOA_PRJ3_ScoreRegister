@@ -121,7 +121,7 @@ public:
 			strings.push_back(prefix);
 		}
 		TrieNode* cur = root;
-		if (findPrefixEnd(prefix, cur))
+		if (findPrefixEnd(prefix, cur) == prefix.length())
 			recursiveFindWords(prefix, cur, strings);
 	}
 
