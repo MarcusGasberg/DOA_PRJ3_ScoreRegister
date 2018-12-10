@@ -1,4 +1,2 @@
-﻿  UUT_ScoreRegister.cpp
-c:\users\mrgas\documents\github\doa_prj3_scoreregister\doa_scoreregister\doa_scoreregister\gamescore.h(27): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(476): note: see declaration of 'ctime'
+﻿  UUT_HashMap.cpp
   ScoreRegister_UnitTests.vcxproj -> C:\Users\mrgas\Documents\GitHub\DOA_PRJ3_ScoreRegister\DOA_ScoreRegister\Debug\ScoreRegister_UnitTests.exe
