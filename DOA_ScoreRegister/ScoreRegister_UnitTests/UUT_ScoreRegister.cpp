@@ -3,6 +3,9 @@
 
 int ARRAY_SIZE = 10;
 
+//================================================
+// Test fixture for testing the ScoreRegister
+//================================================
 class ScoreRegisterTest : public testing::Test
 {
 protected:

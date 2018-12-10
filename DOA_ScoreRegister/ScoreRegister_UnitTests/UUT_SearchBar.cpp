@@ -1,10 +1,16 @@
 #include "pch.h"
 #include "../DOA_ScoreRegister/SearchBar.h"
+
+
+//================================================
+// Test fixture for testing the SearchBar
+//================================================
 class SearchBarTest : public testing::Test
 {
 protected:
 	SearchBarTest()
 	{
+		//Add can be done here because tested in trie
 		sb_.addToSearchHistory(testString1_);
 		sb_.addToSearchHistory(testString2_);
 		sb_.addToSearchHistory(testString3_);

@@ -2,7 +2,9 @@
 #include "../DOA_ScoreRegister/Trie.h"
 #include <list>
 #pragma region TestClasses
-
+//================================================
+// Test fixture for testing the Trie-function findAllWithPrefix
+//================================================
 class TrieTestFindAllWithPrefix : public testing::Test
 {
 public:
@@ -15,6 +17,9 @@ protected:
 	std::vector<std::string> strings;
 };
 
+//================================================
+// Test fixture for testing the Trie-functions insert and search
+//================================================
 class TrieTestInsertSearch : public testing::Test
 {
 public:
@@ -27,6 +32,9 @@ protected:
 
 };
 
+//================================================
+// Test fixture for testing the Trie-function remove
+//================================================
 class TrieTestRemove : public testing::Test
 {
 public:
