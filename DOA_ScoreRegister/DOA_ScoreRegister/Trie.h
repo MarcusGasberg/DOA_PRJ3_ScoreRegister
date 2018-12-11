@@ -46,17 +46,16 @@ public:
 	{
 		TrieNode* cur = root;
 		TrieMapIter res;
-		int i = 0;
-		for (; i < str.length(); i++)
+		for (char iChar : str)
 		{
-			if ((res = cur->children.find(str[i])) != cur->children.end())
+			if ((res = cur->children.find(iChar)) != cur->children.end())
 			{
 				cur = res->second;
 			}
 			else
 			{
-				cur->children[str[i]] = new TrieNode(str[i],false,cur);
-				if((res = cur->children.find(str[i])) != cur->children.end())
+				cur->children[iChar] = new TrieNode(iChar,false,cur);
+				if((res = cur->children.find(iChar)) != cur->children.end())
 					cur = res->second;
 			}
 		}
@@ -73,9 +72,9 @@ public:
 		TrieNode* cur = root;
 		TrieMapIter res;
 
-		for (size_t i = 0; i < str.length(); i++)
+		for (char iChar : str)
 		{
-			if ((res = cur->children.find(str[i])) != cur->children.end())
+			if ((res = cur->children.find(iChar)) != cur->children.end())
 			{
 				cur = res->second;
 			}
@@ -93,7 +92,7 @@ public:
 	{
 		TrieNode* cur = root;
 		TrieMapIter res;
-		int i = 0;
+		int i = 0; //index needed to delete the word
 		for (; i < str.length(); i++)
 		{
 			if ((res = cur->children.find(str[i])) != cur->children.end())

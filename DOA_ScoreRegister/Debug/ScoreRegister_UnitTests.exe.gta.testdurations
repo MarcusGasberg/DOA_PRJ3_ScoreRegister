@@ -10,56 +10,56 @@
     <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_OneInsertedTwice_LoadFactorIsCorrect" Duration="1" />
     <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_OneTwoInserted_LoadFactorIsCorrect" Duration="1" />
     <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_FillMap_LoadFactorCorrect" Duration="1" />
-    <TestDuration Test="OAHashMapTest.Insert_InsertIntoFullMap_ExceptionThrown" Duration="2" />
+    <TestDuration Test="OAHashMapTest.Insert_InsertIntoFullMap_ExceptionThrown" Duration="1" />
     <TestDuration Test="OAHashMapTest.Insert_RemoveFromFullMapThenInsert_NoExceptionThrown" Duration="1" />
     <TestDuration Test="OAHashMapTest.Remove_EmptyMap_NoError" Duration="1" />
     <TestDuration Test="OAHashMapTest.Remove_ExistingElement_ElementRemoved" Duration="1" />
     <TestDuration Test="OAHashMapTest.Remove_ExistingElement_OtherElementsUntouched" Duration="1" />
     <TestDuration Test="OAHashMapTest.Remove_NonExistingElement_OtherElementsUntouched" Duration="1" />
-    <TestDuration Test="LLToolkitTest.HeadInsert_EmptyList_HeadValueIsCorrect" Duration="11" />
-    <TestDuration Test="LLToolkitTest.HeadInsert_NonEmptyList_HeadValueIsCorrect" Duration="9" />
-    <TestDuration Test="LLToolkitTest.HeadInsert_NonEmptyList_HeadNextCorrect" Duration="7" />
-    <TestDuration Test="LLToolkitTest.HeadRemove_EmptyList_NullptrException" Duration="10" />
-    <TestDuration Test="LLToolkitTest.HeadRemove_SingleList_HeadCorrect" Duration="7" />
-    <TestDuration Test="LLToolkitTest.HeadRemove_NonEmptyList_HeadCorrect" Duration="9" />
-    <TestDuration Test="LLToolkitTest.Insert_EmptyList_PrevPtrCorrect" Duration="10" />
-    <TestDuration Test="LLToolkitTest.Insert_SingleList_PrevPtrNextCorrect" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Insert_NonEmptyList_EndOfList" Duration="9" />
-    <TestDuration Test="LLToolkitTest.Insert_NonEmptyList_StartOfList" Duration="8" />
-    <TestDuration Test="LLToolkitTest.Insert_NonEmptyList_MidOfList" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Remove_EmptyList_NullptrException" Duration="11" />
-    <TestDuration Test="LLToolkitTest.Remove_SingleList_NullptrException" Duration="14" />
-    <TestDuration Test="LLToolkitTest.Remove_NonEmptyList_EndOfList" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Remove_NonEmptyList_MidOfList" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Copy_NonEmptyList_AllInfoEqual" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Copy_HugeList_AllInfoEqual" Duration="18" />
-    <TestDuration Test="LLToolkitTest.Copy_NonEmptyList_CopyPtrNotEqualOriginal" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Copy_EmptyList_CopyPtrEqualNull" Duration="6" />
-    <TestDuration Test="LLToolkitTest.Copy_SingleElementList_CopyPtrNotEqualOriginal" Duration="8" />
-    <TestDuration Test="LLToolkitTest.Clone_NonEmptyList_AllInfoEqual" Duration="10" />
-    <TestDuration Test="LLToolkitTest.Clone_HugeList_AllInfoEqual" Duration="23" />
-    <TestDuration Test="LLToolkitTest.Clone_NonEmptyList_CopyPtrNotEqualOriginal" Duration="11" />
-    <TestDuration Test="LLToolkitTest.Clone_EmptyList_CopyPtrEqualNull" Duration="10" />
-    <TestDuration Test="LLToolkitTest.Clone_SingleElementList_CopyPtrNotEqualOriginal" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Clear_NonEmptyList_HeadIsNull" Duration="9" />
-    <TestDuration Test="LLToolkitTest.Clear_NonEmptyList_AllCleared" Duration="5" />
-    <TestDuration Test="LLToolkitTest.Print_NonEmptyList_123" Duration="9" />
-    <TestDuration Test="LLToolkitTest.Print_EmptyList_123" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Print_SingleElementList_1" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Reverse_NonEmptyList_321" Duration="8" />
-    <TestDuration Test="LLToolkitTest.Reverse_SingleElementList_2" Duration="9" />
-    <TestDuration Test="LLToolkitTest.Reverse_EmptyList_Null" Duration="5" />
-    <TestDuration Test="LLToolkitTest.Split_NonEmptyList_23" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Split_NonEmptyList_1" Duration="8" />
-    <TestDuration Test="LLToolkitTest.Split_EmptyList_NullPtrException" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Split_EmptyList_NullptrException" Duration="6" />
-    <TestDuration Test="LLToolkitTest.Split_SingleElementList_NextIsNullptr" Duration="5" />
-    <TestDuration Test="LLToolkitTest.Build_NonEmptyList_123" Duration="8" />
-    <TestDuration Test="LLToolkitTest.Build_SingleList_9" Duration="4" />
-    <TestDuration Test="LLToolkitTest.Build_EmptyList_nullptrException" Duration="6" />
-    <TestDuration Test="LLToolkitTest.Join_NonEmptyList_123" Duration="9" />
-    <TestDuration Test="LLToolkitTest.Join_SingleListToSelf_123" Duration="7" />
-    <TestDuration Test="LLToolkitTest.Join_NonEmptyListToSelf_123" Duration="8" />
+    <TestDuration Test="LLToolkitTest.HeadInsert_EmptyList_HeadValueIsCorrect" Duration="2" />
+    <TestDuration Test="LLToolkitTest.HeadInsert_NonEmptyList_HeadValueIsCorrect" Duration="2" />
+    <TestDuration Test="LLToolkitTest.HeadInsert_NonEmptyList_HeadNextCorrect" Duration="1" />
+    <TestDuration Test="LLToolkitTest.HeadRemove_EmptyList_NullptrException" Duration="3" />
+    <TestDuration Test="LLToolkitTest.HeadRemove_SingleList_HeadCorrect" Duration="2" />
+    <TestDuration Test="LLToolkitTest.HeadRemove_NonEmptyList_HeadCorrect" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Insert_EmptyList_PrevPtrCorrect" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Insert_SingleList_PrevPtrNextCorrect" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Insert_NonEmptyList_EndOfList" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Insert_NonEmptyList_StartOfList" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Insert_NonEmptyList_MidOfList" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Remove_EmptyList_NullptrException" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Remove_SingleList_NullptrException" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Remove_NonEmptyList_EndOfList" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Remove_NonEmptyList_MidOfList" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Copy_NonEmptyList_AllInfoEqual" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Copy_HugeList_AllInfoEqual" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Copy_NonEmptyList_CopyPtrNotEqualOriginal" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Copy_EmptyList_CopyPtrEqualNull" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Copy_SingleElementList_CopyPtrNotEqualOriginal" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Clone_NonEmptyList_AllInfoEqual" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Clone_HugeList_AllInfoEqual" Duration="4" />
+    <TestDuration Test="LLToolkitTest.Clone_NonEmptyList_CopyPtrNotEqualOriginal" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Clone_EmptyList_CopyPtrEqualNull" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Clone_SingleElementList_CopyPtrNotEqualOriginal" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Clear_NonEmptyList_HeadIsNull" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Clear_NonEmptyList_AllCleared" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Print_NonEmptyList_123" Duration="4" />
+    <TestDuration Test="LLToolkitTest.Print_EmptyList_123" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Print_SingleElementList_1" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Reverse_NonEmptyList_321" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Reverse_SingleElementList_2" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Reverse_EmptyList_Null" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Split_NonEmptyList_23" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Split_NonEmptyList_1" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Split_EmptyList_NullPtrException" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Split_EmptyList_NullptrException" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Split_SingleElementList_NextIsNullptr" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Build_NonEmptyList_123" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Build_SingleList_9" Duration="1" />
+    <TestDuration Test="LLToolkitTest.Build_EmptyList_nullptrException" Duration="3" />
+    <TestDuration Test="LLToolkitTest.Join_NonEmptyList_123" Duration="4" />
+    <TestDuration Test="LLToolkitTest.Join_SingleListToSelf_123" Duration="2" />
+    <TestDuration Test="LLToolkitTest.Join_NonEmptyListToSelf_123" Duration="3" />
     <TestDuration Test="NodeTest.Ctor_NoArgs_ValueIsDefault" Duration="1" />
     <TestDuration Test="NodeTest.Ctor_NoArgs_NextIsnullptr" Duration="1" />
     <TestDuration Test="NodeTest.Ctor_InfoArg_ValueIs2" Duration="1" />
@@ -73,7 +73,7 @@
     <TestDuration Test="SearchBarTest.Autocomplete_autocomplete_emptyString_empty" Duration="1" />
     <TestDuration Test="SearchBarTest.Autocomplete_autocomplete_wrongString_empty" Duration="1" />
     <TestDuration Test="SearchBarTest.Autocomplete_autocomplete_t_sizecorrect" Duration="1" />
-    <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_EmptyTrieEmptyPrefix_EmptyStringReturned" Duration="4" />
+    <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_EmptyTrieEmptyPrefix_EmptyStringReturned" Duration="1" />
     <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_EmptyTrieNonEmptyPrefix_NoStringReturned" Duration="1" />
     <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_NoStringsWithPrefix_NoStringsReturned" Duration="1" />
     <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_OneStringsWithPrefix_OneStringReturned" Duration="1" />
@@ -81,7 +81,7 @@
     <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_ThreeStringsWithPrefix_ThreeStringReturned" Duration="1" />
     <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_ThreeStringsWithPrefix_CorrectStringsReturned" Duration="1" />
     <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_ManyStringsInsertedThreeStringsWithPrefix_CorrectStringsReturned" Duration="1" />
-    <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_ManyStringsInsertedEmptyPrefix_AllStringsReturned" Duration="2" />
+    <TestDuration Test="TrieTestFindAllWithPrefix.FindAllWithPrefix_ManyStringsInsertedEmptyPrefix_AllStringsReturned" Duration="1" />
     <TestDuration Test="TrieTestInsertSearch.Search_StringInsertedTwice_StringFound" Duration="1" />
     <TestDuration Test="TrieTestInsertSearch.Search_VanillaTrie_EmptyStringFound" Duration="1" />
     <TestDuration Test="TrieTestInsertSearch.Search_VanillaTrie_StringNotFound" Duration="1" />

@@ -25,7 +25,7 @@ public:
 
 		if (index == KEY_NOT_FOUND) return false;
 		
-		value = &map[index].value;
+		value = &map[index].value; //Set the pointer to the address of the value
 		return true;
 	}
 
@@ -40,12 +40,12 @@ public:
 
 		if (nEntriesUsed == MAP_SIZE) throw OAHashMapException();	// Map is full - no room for key
 		
-		index = hashIndex = hash(key);
+		index = hashIndex = hash(key); //Hash the key
 
 		int nProbes = 0;
 		while (map[index].state == MapEntry::AddressState::OCCUPIED)
 		{
-			if (map[index].key == key)
+			if (map[index].key == key) //Substitute if key found
 			{
 				map[index].value = val;
 				return;
@@ -120,7 +120,7 @@ private:
 		int hashIndex, index;
 		index = hashIndex = hash(key);
 		int nProbes = 0;
-		while (map[index].state != MapEntry::AddressState::NEVER_USED) //For maybe?
+		while (map[index].state != MapEntry::AddressState::NEVER_USED)
 		{
 			if (key == map[index].key && map[index].state != MapEntry::AddressState::PREV_USED)
 				return index;
@@ -142,7 +142,7 @@ private:
 	int probe(int i)
 	{
 		return i;	// Linear probing
-		// return pow(-1,i-1)*pow((i+1)/2, 2);	// Quadratic probing
+		//return pow(-1,i-1)*pow((i+1)/2, 2);	// Quadratic probing
 	}
 
 

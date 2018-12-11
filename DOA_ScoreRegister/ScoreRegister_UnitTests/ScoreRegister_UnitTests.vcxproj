@@ -40,7 +40,6 @@
     <ClCompile Include="UUT_LinkedList.cpp" />
     <ClCompile Include="UUT_LinkedListNode.cpp" />
     <ClCompile Include="UUT_ScoreRegister.cpp" />
-    <ClCompile Include="UUT_SearchableScoreRegister.cpp" />
     <ClCompile Include="UUT_SearchBar.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -22,8 +22,9 @@ public:
 	//Inserts a GameScore gs into the score register.
 	void insertRegister(const GameScore& gs)
 	{
-		LinkedList::Node<GameScore>** n;
-		if(hashMap_.search(gs.getTeam1(),n)){
+		LinkedList::Node<GameScore>** n; //Pointer-pointer necessary to get address of the node in hashmap
+		if(hashMap_.search(gs.getTeam1(),n))
+		{
 			LinkedList::headInsert(*n, gs);
 		}
 		else

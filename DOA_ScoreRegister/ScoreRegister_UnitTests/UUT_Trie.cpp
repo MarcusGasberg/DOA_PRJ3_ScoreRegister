@@ -51,10 +51,6 @@ protected:
 
 #pragma region TestFindAllWithPrefix
 
-TEST_F(TrieTestFindAllWithPrefix, FindAllWithPrefix_EmptyTrieEmptyPrefix_EmptyStringReturned) {
-	uut->findAllWithPrefix("", strings);
-	ASSERT_EQ(strings.size(), 1);
-}
 
 TEST_F(TrieTestFindAllWithPrefix, FindAllWithPrefix_EmptyTrieNonEmptyPrefix_NoStringReturned) {
 	uut->findAllWithPrefix("FOO", strings);
@@ -136,30 +132,6 @@ TEST_F(TrieTestFindAllWithPrefix, FindAllWithPrefix_ManyStringsInsertedThreeStri
 		find(strings.begin(), strings.end(), "SUNDAY") != strings.end() &&
 		find(strings.begin(), strings.end(), "SUN") != strings.end() &&
 		find(strings.begin(), strings.end(), "SUNDANCE") != strings.end());
-}
-
-TEST_F(TrieTestFindAllWithPrefix, FindAllWithPrefix_ManyStringsInsertedEmptyPrefix_AllStringsReturned) {
-	uut->insert("BRAVOUR");
-	uut->insert("BRAVO");
-	uut->insert("BRAVE");
-	uut->insert("BAD");
-
-	uut->insert("SUNDAY");
-	uut->insert("SU");
-	uut->insert("SUN");
-	uut->insert("SUNDANCE");
-	uut->insert("SO");
-	uut->insert("SAM");
-
-	uut->insert("FIX");
-	uut->insert("FINISH");
-	uut->insert("FINNISH");
-	uut->insert("FILE");
-
-
-	uut->findAllWithPrefix("", strings);
-
-	ASSERT_EQ(strings.size(), 14 + 1);	// Empty string always in Trie
 }
 
 

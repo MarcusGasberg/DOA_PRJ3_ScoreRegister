@@ -8,9 +8,7 @@ namespace LinkedList
 	public:
 		Node(const T& i = T(), Node<T>* n = nullptr)
 			: info(i), next(n)
-		{
-
-		}
+		{}
 		T info;
 		Node<T>* next;
 	};
